@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ecd5f8d782d070b1c1d1c849399796fa",
+    "content-hash": "f8a6ef8b3d2f919d4c1ba7ba74a7fbc1",
     "packages": [
         {
             "name": "atk4/core",
@@ -293,12 +293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/ui.git",
-                "reference": "47ba367a18fe958319126e39f4241dd29bb37c9f"
+                "reference": "ddc6cf0fe9f12a1fd8c11938d909721b7f065355"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/ui/zipball/47ba367a18fe958319126e39f4241dd29bb37c9f",
-                "reference": "47ba367a18fe958319126e39f4241dd29bb37c9f",
+                "url": "https://api.github.com/repos/atk4/ui/zipball/ddc6cf0fe9f12a1fd8c11938d909721b7f065355",
+                "reference": "ddc6cf0fe9f12a1fd8c11938d909721b7f065355",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,7 @@
                 "web",
                 "widget"
             ],
-            "time": "2020-02-17T17:51:13+00:00"
+            "time": "2020-02-17T17:55:52+00:00"
         },
         {
             "name": "psr/log",
