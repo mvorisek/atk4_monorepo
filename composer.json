@@ -19,7 +19,7 @@
         "atk4/dsql": "dev-develop#3c3913ebe84f082a71de3d5b9501c21fb1706991",
         "atk4/data": "dev-develop#48b40d61f64efc65f5d1c9d7a057cc2d47ef535f",
         "atk4/schema": "dev-develop#ff7fc192dccab6310806e236884c3a622f3d7961",
-        "atk4/ui": "dev-develop#66cb8a8ec2cf4807c7f03b18c331715e18788e1c"
+        "atk4/ui": "dev-develop#47ba367a18fe958319126e39f4241dd29bb37c9f"
     },
     "require-dev": {
         "phpunit/phpunit": "*, <6, <6, <6, <6",
