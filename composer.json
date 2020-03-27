@@ -19,7 +19,7 @@
         "atk4/dsql": "dev-develop#7a778d7cec7029a6e944391bba2522de37a4ed5d",
         "atk4/data": "dev-develop#8ff5c8bd126a2b7e4073be3f013a51c8a3d47305",
         "atk4/schema": "dev-develop#8b81b6b0b3d640503bf752e6ed05bdf1d0e08dcd",
-        "atk4/ui": "dev-develop#7d7cac31a52d486da853108835eafa682a6cd97f"
+        "atk4/ui": "dev-develop#6743dbc149f00d6f2a734e21fd3a0026aa48e130"
     },
     "require-dev": {
         "phpunit/phpunit": "*, <6, <6, <6, <6",
@@ -32,7 +32,8 @@
         "atk4/schema": "dev-develop",
         "atk4/ui": "dev-develop",
         "guzzlehttp/guzzle": "^6.3",
-        "symfony/process": "^4.3"
+        "symfony/process": "^4.3",
+        "friendsofphp/php-cs-fixer": "^2.16"
     },
     "autoload-dev": {
         "psr-4": {
