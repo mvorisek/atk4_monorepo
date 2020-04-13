@@ -15,7 +15,7 @@
     },
     "require": {
         "php": "^7.3",
-        "atk4/core": "dev-develop#03e85ba4fac7bf1c960244a11847089766a0c166",
+        "atk4/core": "dev-develop#c5be7d43c9645dac779644d8a5bfc564d5cb3759",
         "atk4/dsql": "dev-develop#0947899df50a33965a61c584ffac0ff9e874b9a5",
         "atk4/data": "dev-develop#d2d83c2e82ce23bdb8c61d99b78db177ee0da6f0",
         "atk4/schema": "dev-develop#95c504766e8ea7ea4341f027cd70470ab7446218",
@@ -23,7 +23,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "*, <6, <6, <6, <6",
-        "symfony/yaml": "~2.1|~3.0|~4.0",
+        "symfony/yaml": ">=3.4",
         "satooshi/php-coveralls": "^1.0",
         "symfony/contracts": "^1.1",
         "atk4/data": "dev-develop, dev-develop",
