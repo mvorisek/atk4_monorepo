@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb3d376c463f3cb8218eedf6cd95984c",
+    "content-hash": "d16ece11474a9a8718ffd6ca59594b65",
     "packages": [
         {
             "name": "atk4/core",
@@ -215,17 +215,90 @@
             "time": "2020-04-15T16:25:39+00:00"
         },
         {
+            "name": "atk4/schema",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/schema.git",
+                "reference": "cf9fcb93d5519586c01c95e3e42c5cab2e1d6498"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/cf9fcb93d5519586c01c95e3e42c5cab2e1d6498",
+                "reference": "cf9fcb93d5519586c01c95e3e42c5cab2e1d6498",
+                "shasum": ""
+            },
+            "require": {
+                "atk4/data": "dev-develop",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "atk4/ui": "dev-develop",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpcov": "*",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "atk4/ui": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\schema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                },
+                {
+                    "name": "Imants Horsts",
+                    "homepage": "https://darkside.lv/"
+                },
+                {
+                    "name": "Francesco Danti",
+                    "homepage": "https://oracoltech.com/"
+                },
+                {
+                    "name": "Michael Voříšek",
+                    "homepage": "https://mvorisek.cz/"
+                },
+                {
+                    "name": "Georgi Hristov",
+                    "homepage": "https://xsystems.io/"
+                }
+            ],
+            "description": "Agile Schema",
+            "homepage": "http://github.com/atk4/schema",
+            "keywords": [
+                "Agile",
+                "alter",
+                "data",
+                "framework",
+                "migration",
+                "schema",
+                "sql"
+            ],
+            "time": "2020-04-15T18:38:40+00:00"
+        },
+        {
             "name": "atk4/ui",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/ui.git",
-                "reference": "df6ca84abe941515ee48b205a5f5de3791c8f6d5"
+                "reference": "66099c2fb013104fda0b285a7110d8bb853cecad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/ui/zipball/df6ca84abe941515ee48b205a5f5de3791c8f6d5",
-                "reference": "df6ca84abe941515ee48b205a5f5de3791c8f6d5",
+                "url": "https://api.github.com/repos/atk4/ui/zipball/66099c2fb013104fda0b285a7110d8bb853cecad",
+                "reference": "66099c2fb013104fda0b285a7110d8bb853cecad",
                 "shasum": ""
             },
             "require": {
@@ -304,7 +377,7 @@
                 "web",
                 "widget"
             ],
-            "time": "2020-04-15T16:42:46+00:00"
+            "time": "2020-04-15T19:26:16+00:00"
         },
         {
             "name": "psr/log",
@@ -580,79 +653,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "atk4/schema",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/atk4/schema.git",
-                "reference": "d61e841ee1363f035e2ded6755473be7d59fa7f8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/atk4/schema/zipball/d61e841ee1363f035e2ded6755473be7d59fa7f8",
-                "reference": "d61e841ee1363f035e2ded6755473be7d59fa7f8",
-                "shasum": ""
-            },
-            "require": {
-                "atk4/data": "dev-develop",
-                "php": ">=7.2.0"
-            },
-            "require-dev": {
-                "atk4/ui": "dev-develop",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phpunit/phpcov": "*",
-                "phpunit/phpunit": "*"
-            },
-            "suggest": {
-                "atk4/ui": "dev-develop"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "atk4\\schema\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Romans Malinovskis",
-                    "email": "romans@agiletoolkit.org",
-                    "homepage": "https://nearly.guru/"
-                },
-                {
-                    "name": "Imants Horsts",
-                    "homepage": "https://darkside.lv/"
-                },
-                {
-                    "name": "Francesco Danti",
-                    "homepage": "https://oracoltech.com/"
-                },
-                {
-                    "name": "Michael Voříšek",
-                    "homepage": "https://mvorisek.cz/"
-                },
-                {
-                    "name": "Georgi Hristov",
-                    "homepage": "https://xsystems.io/"
-                }
-            ],
-            "description": "Agile Schema",
-            "homepage": "http://github.com/atk4/schema",
-            "keywords": [
-                "Agile",
-                "alter",
-                "data",
-                "framework",
-                "migration",
-                "schema",
-                "sql"
-            ],
-            "time": "2020-06-22T08:01:12+00:00"
-        },
         {
             "name": "composer/semver",
             "version": "1.5.1",
@@ -4090,8 +4090,8 @@
         "atk4/core": 20,
         "atk4/dsql": 20,
         "atk4/data": 20,
-        "atk4/ui": 20,
-        "atk4/schema": 20
+        "atk4/schema": 20,
+        "atk4/ui": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
