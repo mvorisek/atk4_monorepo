@@ -18,11 +18,11 @@
         "atk4/core": "dev-develop#dd123bd2f7435a5cf4e37c93bad495b8e07b48c5",
         "atk4/dsql": "dev-develop#57c3cf7d173ebb4fb25a52c5f7e869b3f48aad46",
         "atk4/data": "dev-develop#f4a32944631b4a975a9adb1443a3d76848824faf",
-        "atk4/schema": "dev-develop#cf9fcb93d5519586c01c95e3e42c5cab2e1d6498",
+        "atk4/schema": "dev-develop#53e05996a80450b6a2f29ac25ec84186d5640a8b",
         "atk4/ui": "dev-develop#71f1d7e383f23e5893e9722844c87c81cb4b65bb"
     },
     "require-dev": {
-        "phpunit/phpunit": "*, <6, <6, <6, <6",
+        "phpunit/phpunit": "*, <6, <6, *, <6",
         "symfony/yaml": ">=3.4",
         "satooshi/php-coveralls": "^1.0",
         "symfony/contracts": "^1.1",
