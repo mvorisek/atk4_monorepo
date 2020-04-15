@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e53b94c4b804fcb434fe41f17ce90d18",
+    "content-hash": "bb3d376c463f3cb8218eedf6cd95984c",
     "packages": [
         {
             "name": "atk4/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/core.git",
-                "reference": "d574aec26d07f3516f2cac1d8abff31a87ae88f6"
+                "reference": "47c62bd335b08dfae478d9ce7a253e3571a67195"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/core/zipball/d574aec26d07f3516f2cac1d8abff31a87ae88f6",
-                "reference": "d574aec26d07f3516f2cac1d8abff31a87ae88f6",
+                "url": "https://api.github.com/repos/atk4/core/zipball/47c62bd335b08dfae478d9ce7a253e3571a67195",
+                "reference": "47c62bd335b08dfae478d9ce7a253e3571a67195",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "php",
                 "traits"
             ],
-            "time": "2020-04-15T16:53:43+00:00"
+            "time": "2020-04-15T18:51:35+00:00"
         },
         {
             "name": "atk4/data",
@@ -213,79 +213,6 @@
                 "sql"
             ],
             "time": "2020-04-15T16:25:39+00:00"
-        },
-        {
-            "name": "atk4/schema",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/atk4/schema.git",
-                "reference": "5c4cd8500da9126a00196b951a8bf9076b629312"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/atk4/schema/zipball/5c4cd8500da9126a00196b951a8bf9076b629312",
-                "reference": "5c4cd8500da9126a00196b951a8bf9076b629312",
-                "shasum": ""
-            },
-            "require": {
-                "atk4/data": "dev-develop",
-                "php": ">=7.2.0"
-            },
-            "require-dev": {
-                "atk4/ui": "dev-develop",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phpunit/phpcov": "*",
-                "phpunit/phpunit": "*"
-            },
-            "suggest": {
-                "atk4/ui": "dev-develop"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "atk4\\schema\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Romans Malinovskis",
-                    "email": "romans@agiletoolkit.org",
-                    "homepage": "https://nearly.guru/"
-                },
-                {
-                    "name": "Imants Horsts",
-                    "homepage": "https://darkside.lv/"
-                },
-                {
-                    "name": "Francesco Danti",
-                    "homepage": "https://oracoltech.com/"
-                },
-                {
-                    "name": "Michael Voříšek",
-                    "homepage": "https://mvorisek.cz/"
-                },
-                {
-                    "name": "Georgi Hristov",
-                    "homepage": "https://xsystems.io/"
-                }
-            ],
-            "description": "Agile Schema",
-            "homepage": "http://github.com/atk4/schema",
-            "keywords": [
-                "Agile",
-                "alter",
-                "data",
-                "framework",
-                "migration",
-                "schema",
-                "sql"
-            ],
-            "time": "2020-04-15T16:30:41+00:00"
         },
         {
             "name": "atk4/ui",
@@ -653,6 +580,79 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "atk4/schema",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/schema.git",
+                "reference": "d61e841ee1363f035e2ded6755473be7d59fa7f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/d61e841ee1363f035e2ded6755473be7d59fa7f8",
+                "reference": "d61e841ee1363f035e2ded6755473be7d59fa7f8",
+                "shasum": ""
+            },
+            "require": {
+                "atk4/data": "dev-develop",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "atk4/ui": "dev-develop",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpcov": "*",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "atk4/ui": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\schema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                },
+                {
+                    "name": "Imants Horsts",
+                    "homepage": "https://darkside.lv/"
+                },
+                {
+                    "name": "Francesco Danti",
+                    "homepage": "https://oracoltech.com/"
+                },
+                {
+                    "name": "Michael Voříšek",
+                    "homepage": "https://mvorisek.cz/"
+                },
+                {
+                    "name": "Georgi Hristov",
+                    "homepage": "https://xsystems.io/"
+                }
+            ],
+            "description": "Agile Schema",
+            "homepage": "http://github.com/atk4/schema",
+            "keywords": [
+                "Agile",
+                "alter",
+                "data",
+                "framework",
+                "migration",
+                "schema",
+                "sql"
+            ],
+            "time": "2020-06-22T08:01:12+00:00"
+        },
         {
             "name": "composer/semver",
             "version": "1.5.1",
@@ -1083,56 +1083,6 @@
                 }
             ],
             "time": "2020-06-27T23:57:46+00:00"
-        },
-        {
-            "name": "fzaninotto/faker",
-            "version": "v1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
-                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3 || ^7.0"
-            },
-            "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^2.9.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "time": "2019-12-12T13:22:17+00:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -4140,8 +4090,8 @@
         "atk4/core": 20,
         "atk4/dsql": 20,
         "atk4/data": 20,
-        "atk4/schema": 20,
-        "atk4/ui": 20
+        "atk4/ui": 20,
+        "atk4/schema": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
