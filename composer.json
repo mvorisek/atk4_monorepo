@@ -17,7 +17,7 @@
         "php": "^7.3",
         "atk4/core": "dev-develop#9f58502ba0513208171c2eddc1b804cc9d3656f6",
         "atk4/dsql": "dev-develop#9a081b6682a895f4aa6602f9abb63455e4585cd3",
-        "atk4/data": "dev-develop#f4a32944631b4a975a9adb1443a3d76848824faf",
+        "atk4/data": "dev-develop#1ac356a645bcd21eee592c6d088c47eab648e700",
         "atk4/schema": "dev-develop#905d2d2058b53d89b123218bd599a087cd3a0386",
         "atk4/ui": "dev-develop#6cdd0112509b794302f12ab5427f2a856e9452da"
     },
@@ -44,10 +44,6 @@
             ],
             "atk4\\data\\tests\\": [
                 "vendor/atk4/data/tests/"
-            ],
-            "atk4\\data\\tests\\smbo\\": [
-                "vendor/atk4/data/tests/smbo",
-                "vendor/atk4/data/tests/smbo/lib"
             ],
             "atk4\\schema\\tests\\": [
                 "vendor/atk4/schema/tests/"
