@@ -15,7 +15,7 @@
     },
     "require": {
         "php": "^7.3",
-        "atk4/core": "dev-develop#6f9033c64fba1652979c032648ad80f59a5c97ee",
+        "atk4/core": "dev-develop#54129cc2d772c0609df9ef5dc0b973917dfe8b63",
         "atk4/dsql": "dev-develop#9a081b6682a895f4aa6602f9abb63455e4585cd3",
         "atk4/data": "dev-develop#1ac356a645bcd21eee592c6d088c47eab648e700",
         "atk4/schema": "dev-develop#905d2d2058b53d89b123218bd599a087cd3a0386",
