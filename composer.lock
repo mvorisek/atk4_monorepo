@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2a2588a7127895e40989c31564f4d54",
+    "content-hash": "e4e71d1ca4028f32ab24c0dd56f048da",
     "packages": [
         {
             "name": "atk4/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/core.git",
-                "reference": "2f9dcc99a6aaef1d40b343c7108c2208f1588114"
+                "reference": "bf43ea4888be8d3e45d1e48ba58c4c66e90f8cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/core/zipball/2f9dcc99a6aaef1d40b343c7108c2208f1588114",
-                "reference": "2f9dcc99a6aaef1d40b343c7108c2208f1588114",
+                "url": "https://api.github.com/repos/atk4/core/zipball/bf43ea4888be8d3e45d1e48ba58c4c66e90f8cca",
+                "reference": "bf43ea4888be8d3e45d1e48ba58c4c66e90f8cca",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "php",
                 "traits"
             ],
-            "time": "2020-04-28T15:37:44+00:00"
+            "time": "2020-04-28T17:35:50+00:00"
         },
         {
             "name": "atk4/data",
@@ -4156,8 +4156,8 @@
     ],
     "aliases": [
         {
-            "alias": "dev-develop#2f9dcc99a6aaef1d40b343c7108c2208f1588114",
-            "alias_normalized": "dev-develop#2f9dcc99a6aaef1d40b343c7108c2208f1588114",
+            "alias": "dev-develop#bf43ea4888be8d3e45d1e48ba58c4c66e90f8cca",
+            "alias_normalized": "dev-develop#bf43ea4888be8d3e45d1e48ba58c4c66e90f8cca",
             "version": "dev-develop",
             "package": "atk4/core"
         },
