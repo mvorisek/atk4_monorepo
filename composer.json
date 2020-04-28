@@ -15,7 +15,7 @@
     },
     "require": {
         "php": "^7.3",
-        "atk4/core": "dev-develop#9abde34f5c87738ea75fa5145562de1d16704a2d as dev-develop#9abde34f5c87738ea75fa5145562de1d16704a2d",
+        "atk4/core": "dev-develop#91e31c8d4ac782b9d82ce833445384a6ac52a670 as dev-develop#91e31c8d4ac782b9d82ce833445384a6ac52a670",
         "atk4/dsql": "dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd as dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd",
         "atk4/data": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96 as dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
         "atk4/schema": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc as dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
