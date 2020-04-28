@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4e71d1ca4028f32ab24c0dd56f048da",
+    "content-hash": "150d1a6b13f80e72e96a14cf129b6efe",
     "packages": [
         {
             "name": "atk4/core",
@@ -220,12 +220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/schema.git",
-                "reference": "ec9ed1e12d493ecc0ddc5b0067018058854c94bc"
+                "reference": "3866915682fb8fa203fe96d334925dc145ba6509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/schema/zipball/ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
-                "reference": "ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/3866915682fb8fa203fe96d334925dc145ba6509",
+                "reference": "3866915682fb8fa203fe96d334925dc145ba6509",
                 "shasum": ""
             },
             "require": {
@@ -285,7 +285,7 @@
                 "schema",
                 "sql"
             ],
-            "time": "2020-04-28T12:26:33+00:00"
+            "time": "2020-04-28T17:57:25+00:00"
         },
         {
             "name": "atk4/ui",
@@ -4174,8 +4174,8 @@
             "package": "atk4/data"
         },
         {
-            "alias": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
-            "alias_normalized": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
+            "alias": "dev-develop#3866915682fb8fa203fe96d334925dc145ba6509",
+            "alias_normalized": "dev-develop#3866915682fb8fa203fe96d334925dc145ba6509",
             "version": "dev-develop",
             "package": "atk4/schema"
         },
