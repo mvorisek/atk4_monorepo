@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70e70a9c2b2e9455f8c81e2f5f887c56",
+    "content-hash": "d755767db59143d0853ffbed710ed80b",
     "packages": [
         {
             "name": "atk4/core",
@@ -30,7 +30,7 @@
             "require-dev": {
                 "atk4/data": "dev-develop",
                 "friendsofphp/php-cs-fixer": "^2.16",
-                "phpunit/phpunit": "*",
+                "phpunit/phpunit": ">=8.0",
                 "symfony/contracts": ">=1.1"
             },
             "type": "library",
@@ -99,7 +99,7 @@
                 "atk4/schema": "dev-develop",
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "phpunit/phpcov": "*",
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": ">=8.0"
             },
             "type": "library",
             "autoload": {
@@ -174,7 +174,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "phpunit/phpcov": "*",
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": ">=8.0"
             },
             "suggest": {
                 "jdorn/sql-formatter": "*"
@@ -220,12 +220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/schema.git",
-                "reference": "673d631d3476c7ce4f63e8f59be9d061b7049d97"
+                "reference": "2b3f60fb47adedad72dede9862c5e733ba699a97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/schema/zipball/673d631d3476c7ce4f63e8f59be9d061b7049d97",
-                "reference": "673d631d3476c7ce4f63e8f59be9d061b7049d97",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/2b3f60fb47adedad72dede9862c5e733ba699a97",
+                "reference": "2b3f60fb47adedad72dede9862c5e733ba699a97",
                 "shasum": ""
             },
             "require": {
@@ -236,7 +236,7 @@
                 "atk4/ui": "dev-develop",
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "phpunit/phpcov": "*",
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": ">=8.0"
             },
             "suggest": {
                 "atk4/ui": "dev-develop"
@@ -285,7 +285,7 @@
                 "schema",
                 "sql"
             ],
-            "time": "2020-04-28T18:00:28+00:00"
+            "time": "2020-04-28T18:05:45+00:00"
         },
         {
             "name": "atk4/ui",
@@ -315,7 +315,7 @@
                 "fzaninotto/faker": "*",
                 "guzzlehttp/guzzle": "^6.3",
                 "phpunit/phpcov": "*",
-                "phpunit/phpunit": "*",
+                "phpunit/phpunit": ">=8.0",
                 "symfony/process": "^4.3 || ^5.0"
             },
             "type": "library",
@@ -1325,16 +1325,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.10.0",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "5796d127b0c4ff505b77455148ea9d5269d99758"
+                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/5796d127b0c4ff505b77455148ea9d5269d99758",
-                "reference": "5796d127b0c4ff505b77455148ea9d5269d99758",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
                 "shasum": ""
             },
             "require": {
@@ -1375,7 +1375,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-28T07:02:41+00:00"
+            "time": "2020-06-29T13:22:24+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -4154,38 +4154,7 @@
             "time": "2020-06-16T10:16:42+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "dev-develop#ffde6f390d8389a6f0faf3f1165116ec504b0d2a",
-            "alias_normalized": "dev-develop#ffde6f390d8389a6f0faf3f1165116ec504b0d2a",
-            "version": "dev-develop",
-            "package": "atk4/core"
-        },
-        {
-            "alias": "dev-develop#66527ceba6ac8b065ba7fd2d6374566e7ce7cb2b",
-            "alias_normalized": "dev-develop#66527ceba6ac8b065ba7fd2d6374566e7ce7cb2b",
-            "version": "dev-develop",
-            "package": "atk4/dsql"
-        },
-        {
-            "alias": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
-            "alias_normalized": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
-            "version": "dev-develop",
-            "package": "atk4/data"
-        },
-        {
-            "alias": "dev-develop#673d631d3476c7ce4f63e8f59be9d061b7049d97",
-            "alias_normalized": "dev-develop#673d631d3476c7ce4f63e8f59be9d061b7049d97",
-            "version": "dev-develop",
-            "package": "atk4/schema"
-        },
-        {
-            "alias": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1",
-            "alias_normalized": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1",
-            "version": "dev-develop",
-            "package": "atk4/ui"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "atk4/core": 20,
