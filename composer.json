@@ -18,7 +18,7 @@
         "atk4/core": "dev-develop#ffde6f390d8389a6f0faf3f1165116ec504b0d2a as dev-develop#ffde6f390d8389a6f0faf3f1165116ec504b0d2a",
         "atk4/dsql": "dev-develop#66527ceba6ac8b065ba7fd2d6374566e7ce7cb2b as dev-develop#66527ceba6ac8b065ba7fd2d6374566e7ce7cb2b",
         "atk4/data": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96 as dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
-        "atk4/schema": "dev-develop#3866915682fb8fa203fe96d334925dc145ba6509 as dev-develop#3866915682fb8fa203fe96d334925dc145ba6509",
+        "atk4/schema": "dev-develop#673d631d3476c7ce4f63e8f59be9d061b7049d97 as dev-develop#673d631d3476c7ce4f63e8f59be9d061b7049d97",
         "atk4/ui": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1 as dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1"
     },
     "require-dev": {
