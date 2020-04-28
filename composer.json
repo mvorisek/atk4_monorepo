@@ -15,11 +15,11 @@
     },
     "require": {
         "php": "^7.3",
-        "atk4/core": "dev-develop#313e372f30eb249ad1375f13c84acef232340a98",
-        "atk4/dsql": "dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd",
-        "atk4/data": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
-        "atk4/schema": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
-        "atk4/ui": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1"
+        "atk4/core": "dev-develop#9abde34f5c87738ea75fa5145562de1d16704a2d as dev-develop#9abde34f5c87738ea75fa5145562de1d16704a2d",
+        "atk4/dsql": "dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd as dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd",
+        "atk4/data": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96 as dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
+        "atk4/schema": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc as dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
+        "atk4/ui": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1 as dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1"
     },
     "require-dev": {
         "atk4/data": "dev-develop",

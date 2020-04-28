@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1341e3e02c3b83552bf271db700f409",
+    "content-hash": "0e9847a204ed6b384d87410bacb392e0",
     "packages": [
         {
             "name": "atk4/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/core.git",
-                "reference": "313e372f30eb249ad1375f13c84acef232340a98"
+                "reference": "9abde34f5c87738ea75fa5145562de1d16704a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/core/zipball/313e372f30eb249ad1375f13c84acef232340a98",
-                "reference": "313e372f30eb249ad1375f13c84acef232340a98",
+                "url": "https://api.github.com/repos/atk4/core/zipball/9abde34f5c87738ea75fa5145562de1d16704a2d",
+                "reference": "9abde34f5c87738ea75fa5145562de1d16704a2d",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "php",
                 "traits"
             ],
-            "time": "2020-04-27T20:40:17+00:00"
+            "time": "2020-04-28T14:41:20+00:00"
         },
         {
             "name": "atk4/data",
@@ -4154,7 +4154,38 @@
             "time": "2020-06-16T10:16:42+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "dev-develop#9abde34f5c87738ea75fa5145562de1d16704a2d",
+            "alias_normalized": "dev-develop#9abde34f5c87738ea75fa5145562de1d16704a2d",
+            "version": "dev-develop",
+            "package": "atk4/core"
+        },
+        {
+            "alias": "dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd",
+            "alias_normalized": "dev-develop#1800447f9f15636f69b16655c3c37bd90f4652fd",
+            "version": "dev-develop",
+            "package": "atk4/dsql"
+        },
+        {
+            "alias": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
+            "alias_normalized": "dev-develop#c7b6de34cb0280f0d3374ae6587438ae1d693f96",
+            "version": "dev-develop",
+            "package": "atk4/data"
+        },
+        {
+            "alias": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
+            "alias_normalized": "dev-develop#ec9ed1e12d493ecc0ddc5b0067018058854c94bc",
+            "version": "dev-develop",
+            "package": "atk4/schema"
+        },
+        {
+            "alias": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1",
+            "alias_normalized": "dev-develop#aa60b9f49c2049e802ef67a6d6fbf96976efe7f1",
+            "version": "dev-develop",
+            "package": "atk4/ui"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "atk4/core": 20,
