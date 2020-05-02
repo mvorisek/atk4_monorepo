@@ -17,13 +17,13 @@
         "php": "^7.3",
         "atk4/core": "dev-develop#503ed2ff35865ca8b5499ecb61c95a6257b95621",
         "atk4/dsql": "dev-develop#04fc540509a77b574ecd7dc6a7522e0345fe29b1",
-        "atk4/data": "dev-develop#08080b1eec238a6ac77f9e51a353e3adc9ac7bd7",
+        "atk4/data": "dev-develop#90ab68ac063b8fc2c72dcd66115f1bd3f70a3a92",
         "atk4/schema": "dev-develop#0a8e62c1f067a570f029eee4d48ee7284334cc22",
         "atk4/ui": "dev-develop#24df58c8c71ed296bcd04dd9df1af1cd995c3ada"
     },
     "require-dev": {
         "atk4/data": "dev-develop",
-        "friendsofphp/php-cs-fixer": "^2.16, ^2.16, ^2.16, ^2.16",
+        "friendsofphp/php-cs-fixer": "^2.16, ^2.16, ^2.16, ^2.16, ^2.16",
         "phpunit/phpunit": "*, *, <6, *, *",
         "symfony/contracts": ">=1.1",
         "symfony/yaml": ">=3.4",
