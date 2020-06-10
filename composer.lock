@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df6627ab2d672cd58865df2e3acdc218",
+    "content-hash": "1fc8e1a17f4b66eebbd421da9fda7fe5",
     "packages": [
         {
             "name": "atk4/core",
@@ -159,12 +159,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/dsql.git",
-                "reference": "447d076a760f0e51fcefb2aeb0e52eb86df6ded3"
+                "reference": "8f2071b30807467806253fc280e6ae19d1b475dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/dsql/zipball/447d076a760f0e51fcefb2aeb0e52eb86df6ded3",
-                "reference": "447d076a760f0e51fcefb2aeb0e52eb86df6ded3",
+                "url": "https://api.github.com/repos/atk4/dsql/zipball/8f2071b30807467806253fc280e6ae19d1b475dc",
+                "reference": "8f2071b30807467806253fc280e6ae19d1b475dc",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2020-06-06T13:27:51+00:00"
+            "time": "2020-06-10T12:22:21+00:00"
         },
         {
             "name": "atk4/schema",
