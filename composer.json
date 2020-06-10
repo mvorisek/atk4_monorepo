@@ -19,7 +19,7 @@
         "atk4/dsql": "dev-develop#8f2071b30807467806253fc280e6ae19d1b475dc",
         "atk4/data": "dev-develop#5012aa4b92ddcabba097293f07774368387e6109",
         "atk4/schema": "dev-develop#cbc26c35b81650c997c0139d4a4b0d701773b152",
-        "atk4/ui": "dev-develop#5f5d4dd672610a2c9d4e2644e890c1fa1de30e92"
+        "atk4/ui": "dev-develop#67595a9cf7a6c28439c78b58b5fe6ad0d017b923"
     },
     "require-dev": {
         "atk4/data": "dev-develop",
