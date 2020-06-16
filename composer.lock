@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3090738cf66b2deec242a21142df08e4",
+    "content-hash": "7fcbb3c0d75180bbbc926d35af8a96c2",
     "packages": [
         {
             "name": "atk4/core",
@@ -12,17 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/core.git",
-                "reference": "d28157b15bbbd93950533c214029935659fee9c7"
+                "reference": "83c28b53b50dbe04bab1b52284a4b768ab184008"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/core/zipball/d28157b15bbbd93950533c214029935659fee9c7",
-                "reference": "d28157b15bbbd93950533c214029935659fee9c7",
+                "url": "https://api.github.com/repos/atk4/core/zipball/83c28b53b50dbe04bab1b52284a4b768ab184008",
+                "reference": "83c28b53b50dbe04bab1b52284a4b768ab184008",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": ">=7.2.0",
+                "php": ">=7.3.0",
                 "psr/log": "~1.0",
                 "symfony/polyfill-php73": "^1.15",
                 "symfony/yaml": ">=3.4"
@@ -70,7 +70,7 @@
                 "php",
                 "traits"
             ],
-            "time": "2020-06-13T12:45:36+00:00"
+            "time": "2020-06-16T13:19:05+00:00"
         },
         {
             "name": "atk4/data",
