@@ -80,7 +80,7 @@ $repos = [
     new Repo('atk4/ui', 'https://github.com/atk4/ui.git'),
 ];
 
-$minDt = new \DateTime('2020-1-1');
+$minDt = (new \DateTime('2020-1-1'))->setTimeZone(new \DateTimeZone('UTC'));
 
 $cacheDir = __DIR__ . '/cache';
 @mkdir($cacheDir);
@@ -121,7 +121,7 @@ foreach ($repos as $repo) {
     $res = run($repo->dir, 'git log "' . $repo->branch . '" --no-merges --pretty="%H %cD"');
     foreach (explode("\n", $res) as $l) {
         [$h, $d] = explode(' ', $l, 2);
-        $commit = new Commit($repo, $h, new \DateTime($d));
+        $commit = new Commit($repo, $h, (new \DateTime($d))->setTimeZone(new \DateTimeZone('UTC')));
         $repo->commits[] = $commit;
     }
 
@@ -132,7 +132,7 @@ foreach ($repos as $repo) {
 }
 
 // run tests and release if passing
-$lastTestedDt = new \DateTime(run($relRepo->dir, 'git log releases -1 --no-merges --pretty="%aD"'));
+$lastTestedDt = (new \DateTime(run($relRepo->dir, 'git log releases -1 --no-merges --pretty="%aD"')))->setTimeZone(new \DateTimeZone('UTC'));
 
 $uniqueDts = [];
 foreach ($repos as $repo) {
