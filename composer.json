@@ -1,0 +1,16 @@
+{
+    "name": "atk4mdev/ui",
+    "description": "Monorepo of major Atk4 repos",
+    "type": "library",
+    "homepage": "https://www.mvorisek.com/",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Michael Voříšek",
+            "email": "mvorisek@mvorisek.cz"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    }
+}
