@@ -70,13 +70,13 @@ $deleteDirFunc = function ($dirPath) use(&$deleteDirFunc) {
 
 // <config>
 $relRepo = new Repo('../rel_repo', 'git@github.com:mvorisek/atk4_monorepo.git');
-$relRepo->branch = 'releases';
+$relRepo->branch = 'experi';
 
 $repos = [
     new Repo('atk4/core', 'https://github.com/atk4/core.git'),
     new Repo('atk4/dsql', 'https://github.com/atk4/dsql.git'),
     new Repo('atk4/data', 'https://github.com/atk4/data.git'),
-    new Repo('atk4/schema', 'https://github.com/atk4/schema.git'), // @TODO once releases prior 2020-06-25 are done - comment,
+    new Repo('atk4/schema', 'https://github.com/atk4/schema.git'), // @TODO once releases prior 2020-06-25 are done - comment (remove after 2020-06-08 - using compatible develop)
     new Repo('atk4/ui', 'https://github.com/atk4/ui.git'),
 ];
 
@@ -132,7 +132,7 @@ foreach ($repos as $repo) {
 }
 
 // run tests and release if passing
-$lastTestedDt = (new \DateTime(run($relRepo->dir, 'git log releases -1 --no-merges --pretty="%aD"')))->setTimeZone(new \DateTimeZone('UTC'));
+$lastTestedDt = (new \DateTime(run($relRepo->dir, 'git log "' . $relRepo->branch . '" -1 --no-merges --pretty="%aD"')))->setTimeZone(new \DateTimeZone('UTC'));
 
 $uniqueDts = [];
 foreach ($repos as $repo) {
@@ -207,14 +207,14 @@ foreach ($uniqueDts as $dt) {
         $conf = json_decode(file_get_contents($relRepo->dir . '/vendor2/' . $repo->alias . '/composer.json'), true);
 
 
-        $conf['require-dev']['fzaninotto/faker'] = '*'; // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
+        $conf['require-dev']['fzaninotto/faker'] = '*'; // @TODO once releases prior 2020-06-25 are done - comment, should be not needed (remove after 2020-4-16 / requires not in require-release only)
 
 
         foreach ($conf['require-dev'] ?? [] as $k => $v) {
             $composerJson['require-dev'][$k] = (isset($composerJson['require-dev'][$k]) ? $composerJson['require-dev'][$k] . ', ' : '') . $v;
         }
 
-        // @TODO once releases prior 2020-06-25 are done - comment, should be not needed, but without it, install is slow
+        // @TODO once releases prior 2020-06-25 are done - comment, should be not needed, but without it, install is slow (remove after 2020-06-10 / phpunit upgraded)
         unset($composerJson['require-dev']['php-coveralls']);
         unset($composerJson['require-dev']['squizlabs/php_codesniffer']);
         unset($composerJson['require-dev']['behat/behat']);
@@ -234,7 +234,7 @@ foreach ($uniqueDts as $dt) {
         }
     }
 
-    // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
+    // @TODO once releases prior 2020-06-25 are done - comment, should be not needed (once ui is not modified below localy - probably 2020-06-19 / fast web testing)
     $deleteDirFunc($relRepo->dir . '/vendor/atk4/ui');
 
     $composerInstallFunc();
@@ -249,7 +249,7 @@ foreach ($uniqueDts as $dt) {
             @mkdir($cacheDirPhpunit);
 
             // create fake vendor/autoload.php
-            // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
+            // @TODO once releases prior 2020-06-25 are done - comment, should be not needed (remove after 2020-06-19 / fast web testing)
             $repoDir = $relRepo->dir . '/vendor/' . $c->repo->alias;
             @mkdir($repoDir . '/vendor');
             file_put_contents($repoDir . '/vendor/autoload.php', '<?php require __DIR__ . \'/../../../autoload.php\';');
@@ -269,9 +269,10 @@ foreach ($uniqueDts as $dt) {
                 'phpw ../..'
                 . ' -d sys_temp_dir="' . realpath($cacheDirPhpunit) . '"'
                 . ' -d session.save_path="' . realpath($cacheDirPhpunit) . '"'
-                . ' -d disable_functions=' // @TODO once releases prior 2020-06-25 are done - remove disable_functions
+                . ' -d disable_functions=' // @TODO once releases prior 2020-06-25 are done - remove disable_functions (remove after 2020-06-19 / fast web testing)
                 . ' ../../phpunit/phpunit/phpunit --bootstrap ../../autoload.php --no-coverage -v'
-                . ' --filter "^(?!atk4\\\\data\\\\tests\\\\CSVTest::)(?!atk4\\\\ui\\\\tests\\\\\\w*::testDemoAssertSSEResponse)(?!atk4\\\\ui\\\\tests\\\\\\w*::testDemoAssertJSONResponsePOST)"', // @TODO once releases prior 2020-06-25 are done - remove
+                // @TODO once releases prior 2020-06-25 are done - (remove after 2020-04-10 / test passing as standard)
+                . ' --filter "^(?!atk4\\\\data\\\\tests\\\\CSVTest::)(?!atk4\\\\ui\\\\tests\\\\\\w*::testDemoAssertSSEResponse)(?!atk4\\\\ui\\\\tests\\\\\\w*::testDemoAssertJSONResponsePOST)"',
                 true
             );
             $deleteDirFunc($cacheDirPhpunit);
@@ -296,9 +297,9 @@ foreach ($uniqueDts as $dt) {
     run($relRepo->dir, 'git push --force');
 
     // set tag if tests passed
-    if (count($failedRepos) === 0) {
+/*    if (count($failedRepos) === 0) {
         $relTag = 'v0.' . $dt->format('ymd.His');
         run($relRepo->dir, 'git tag "' . $relTag . '"');
         run($relRepo->dir, 'git push origin "' . $relTag . '"');
-    }
+    }*/
 }
