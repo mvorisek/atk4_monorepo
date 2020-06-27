@@ -62,6 +62,10 @@ $deleteDirFunc = function ($dirPath) use(&$deleteDirFunc) {
     }
 
     rmdir($dirPath);
+    
+    if (is_dir($dirPath)) {
+        rename($dirPath, $dirPath . '.permissue-' . md5(microtime(true)));
+    }
 };
 
 // <config>
