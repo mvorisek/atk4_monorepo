@@ -260,6 +260,7 @@ foreach ($uniqueDts as $dt) {
                     'Process::fromShellCommandline(\'php -d open_basedir="\' . ini_get(\'open_basedir\') . \'" -d session.save_path="\' . sys_get_temp_dir() . \'" -S',
                     file_get_contents($repoDir . '/tests/BuiltInWebServerAbstract.php')
                 )));
+                file_put_contents($repoDir . '/tests/FormTest.php', str_replace('->assertStringContainsString(', '->assertContains(', file_get_contents($repoDir . '/tests/FormTest.php')));
                 file_put_contents($repoDir . '/demos/db.php', '<?php $db = new \atk4\data\Persistence\SQL(\'mysql:dbname=atk4_test__ui;host=mysql\', \'atk4_test\', \'atk4_pass\');');
             }
 
@@ -271,7 +272,7 @@ foreach ($uniqueDts as $dt) {
                 . ' -d session.save_path="' . realpath($cacheDirPhpunit) . '"'
                 . ' -d disable_functions=' // @TODO once releases prior 2020-06-25 are done - remove disable_functions
                 . ' ../../phpunit/phpunit/phpunit --bootstrap ../../autoload.php --no-coverage -v'
-                . ' --filter "^(?!atk4\\\\data\\\\tests\\\\CSVTest::)(?!atk4\\\\ui\\\\tests\\\\\\w*::testDemoAssertSSEResponse)(?!atk4\\\\ui\\\\tests\\\\\\w*::testDemoAssertJSONResponsePOST)"', // @TODO once releases prior 2020-06-25 are done - remove
+                . ' --filter "^(?!atk4\\\\data\\\\tests\\\\CSVTest::)"', // @TODO once releases prior 2020-06-25 are done - remove
                 true
             );
             $deleteDirFunc($cacheDirPhpunit);
