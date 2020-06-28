@@ -255,11 +255,11 @@ foreach ($uniqueDts as $dt) {
             file_put_contents($repoDir . '/vendor/autoload.php', '<?php require __DIR__ . \'/../../../autoload.php\';');
             if ($c->repo->alias === 'atk4/ui') {
                 file_put_contents($repoDir . '/tools/coverage.php', '<?php function coverage() { /* do nothing... */ }');
-                file_put_contents($repoDir . '/tests/BuiltInWebServerAbstract.php', str_replace(
+                file_put_contents($repoDir . '/tests/BuiltInWebServerAbstract.php', preg_replace('~tearDownAfterClass\(\)\s+\{(?!self::)~', '$0self::$process->stop();', str_replace(
                     'Process::fromShellCommandline(\'php -S',
                     'Process::fromShellCommandline(\'php -d open_basedir="\' . ini_get(\'open_basedir\') . \'" -d session.save_path="\' . sys_get_temp_dir() . \'" -S',
                     file_get_contents($repoDir . '/tests/BuiltInWebServerAbstract.php')
-                ));
+                )));
                 file_put_contents($repoDir . '/demos/db.php', '<?php $db = new \atk4\data\Persistence\SQL(\'mysql:dbname=atk4_test__ui;host=mysql\', \'atk4_test\', \'atk4_pass\');');
             }
 
