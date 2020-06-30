@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f8a74bc4673e838278b466dc2af09c0",
+    "content-hash": "62826bb5ba6e4585910676ce9c523989",
     "packages": [
         {
             "name": "atk4/core",
@@ -220,12 +220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/schema.git",
-                "reference": "708720c49c1597a75445a748c98850a5aa42065c"
+                "reference": "cc512ac0f2a3ff6735c41751ebc74aadfc6bbf63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/schema/zipball/708720c49c1597a75445a748c98850a5aa42065c",
-                "reference": "708720c49c1597a75445a748c98850a5aa42065c",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/cc512ac0f2a3ff6735c41751ebc74aadfc6bbf63",
+                "reference": "cc512ac0f2a3ff6735c41751ebc74aadfc6bbf63",
                 "shasum": ""
             },
             "require": {
@@ -285,7 +285,7 @@
                 "schema",
                 "sql"
             ],
-            "time": "2020-06-29T16:51:56+00:00"
+            "time": "2020-06-30T12:40:39+00:00"
         },
         {
             "name": "atk4/ui",
