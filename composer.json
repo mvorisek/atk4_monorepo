@@ -17,7 +17,7 @@
         "php": "^7.3",
         "atk4/core": "dev-develop#901f16894b8774c97aaa4fa2f590d86e7aae360f",
         "atk4/dsql": "dev-develop#92e4c8ed33e182d20d4c97a93469fb7924619a84",
-        "atk4/data": "dev-develop#3fb9e1a1be9654250abc89cb3cf1eaf03a3edceb",
+        "atk4/data": "dev-develop#59b8d2bba12633bb69ff5441fc10348ba995d86e",
         "atk4/schema": "dev-develop#b61d6b1accc1bd743075111bc79343d45faf6071",
         "atk4/ui": "dev-develop#6aff1f0ebe9e54313e06cf3f76033357b331d031"
     },
