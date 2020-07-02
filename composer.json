@@ -15,7 +15,7 @@
     },
     "require": {
         "php": "^7.3",
-        "atk4/core": "dev-develop#901f16894b8774c97aaa4fa2f590d86e7aae360f",
+        "atk4/core": "dev-develop#c2299ac18e6ee4b2fa8bcd463576b20594b9be88",
         "atk4/dsql": "dev-develop#92e4c8ed33e182d20d4c97a93469fb7924619a84",
         "atk4/data": "dev-develop#59b8d2bba12633bb69ff5441fc10348ba995d86e",
         "atk4/schema": "dev-develop#b61d6b1accc1bd743075111bc79343d45faf6071",
@@ -26,9 +26,13 @@
         "friendsofphp/php-cs-fixer": "^2.16, ^2.16, ^2.16, ^2.16, ^2.16",
         "phpunit/phpunit": ">=8.0, >=8.0, >=8.0, >=8.0, >=8.0",
         "symfony/contracts": ">=1.1",
-        "fzaninotto/faker": "*, *, *, *, *",
+        "phpunit/phpcov": "*, *, *, *",
         "atk4/schema": "dev-develop",
         "atk4/ui": "dev-develop",
+        "behat/behat": "^3.4",
+        "behat/mink-extension": "^2.2",
+        "behat/mink-selenium2-driver": "^1.3",
+        "fzaninotto/faker": "*",
         "guzzlehttp/guzzle": "^6.3",
         "symfony/process": "^4.3 || ^5.0"
     },
