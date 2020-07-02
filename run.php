@@ -252,7 +252,7 @@ foreach ($uniqueDts as $dt) {
             // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
             $repoDir = $relRepo->dir . '/vendor/' . $c->repo->alias;
             @mkdir($repoDir . '/vendor');
-            file_put_contents($repoDir . '/vendor/autoload.php', '<?php require __DIR__ . \'/../../../autoload.php\';');
+            file_put_contents($repoDir . '/vendor/autoload.php', '<?php return require __DIR__ . \'/../../../autoload.php\';');
             if ($c->repo->alias === 'atk4/ui') {
                 file_put_contents($repoDir . '/tools/coverage.php', '<?php function coverage() { /* do nothing... */ }');
                 file_put_contents($repoDir . '/tests/BuiltInWebServerAbstract.php', preg_replace('~tearDownAfterClass\(\)\s+\{(?!self::)~', '$0self::$process->stop();', str_replace(
