@@ -260,7 +260,6 @@ foreach ($uniqueDts as $dt) {
                     'Process::fromShellCommandline(\'php -d open_basedir="\' . ini_get(\'open_basedir\') . \'" -d session.save_path="\' . sys_get_temp_dir() . \'" -S',
                     file_get_contents($repoDir . '/tests/BuiltInWebServerAbstract.php')
                 )));
-                file_put_contents($repoDir . '/tests/FormTest.php', str_replace('->assertStringContainsString(', '->assertContains(', file_get_contents($repoDir . '/tests/FormTest.php')));
                 file_put_contents($repoDir . '/demos/db.php', '<?php $db = new \atk4\data\Persistence\SQL(\'mysql:dbname=atk4_test__ui;host=mysql\', \'atk4_test\', \'atk4_pass\');');
             }
 
