@@ -76,7 +76,7 @@ $repos = [
     new Repo('atk4/core', 'https://github.com/atk4/core.git'),
     new Repo('atk4/dsql', 'https://github.com/atk4/dsql.git'),
     new Repo('atk4/data', 'https://github.com/atk4/data.git'),
-    new Repo('atk4/schema', 'https://github.com/atk4/schema.git'), // @TODO once releases prior 2020-06-25 are done - comment,
+    new Repo('atk4/schema', 'https://github.com/atk4/schema.git'), // needed as data-dev depends on it
     new Repo('atk4/ui', 'https://github.com/atk4/ui.git'),
 ];
 
@@ -206,22 +206,9 @@ foreach ($uniqueDts as $dt) {
     foreach ($repos as $repo) {
         $conf = json_decode(file_get_contents($relRepo->dir . '/vendor2/' . $repo->alias . '/composer.json'), true);
 
-
-        $conf['require-dev']['fzaninotto/faker'] = '*'; // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
-
-
         foreach ($conf['require-dev'] ?? [] as $k => $v) {
             $composerJson['require-dev'][$k] = (isset($composerJson['require-dev'][$k]) ? $composerJson['require-dev'][$k] . ', ' : '') . $v;
         }
-
-        // @TODO once releases prior 2020-06-25 are done - comment, should be not needed, but without it, install is slow
-        unset($composerJson['require-dev']['php-coveralls']);
-        unset($composerJson['require-dev']['squizlabs/php_codesniffer']);
-        unset($composerJson['require-dev']['behat/behat']);
-        unset($composerJson['require-dev']['behat/mink-selenium2-driver']);
-        unset($composerJson['require-dev']['behat/mink-extension']);
-        unset($composerJson['require-dev']['codeclimate/php-test-reporter']);
-        unset($composerJson['require-dev']['phpunit/phpcov']);
 
         foreach ($conf['autoload-dev']['psr-4'] ?? [] as $k => $vArr) {
             if (isset($composerJson['autoload-dev']['psr-4'][$k])) { // can be removed if needed, we support array below
@@ -234,9 +221,6 @@ foreach ($uniqueDts as $dt) {
         }
     }
 
-    // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
-    $deleteDirFunc($relRepo->dir . '/vendor/atk4/ui');
-
     $composerInstallFunc();
 
     // run tests
@@ -244,28 +228,24 @@ foreach ($uniqueDts as $dt) {
     foreach ($commits as $c) {
         $c->passed = false;
         try {
+            $repoDir = $relRepo->dir . '/vendor/' . $c->repo->alias;
+            
             // create cache dir
             $cacheDirPhpunit = $relRepo->dir . '/vendor/phpunit.cache.local';
             @mkdir($cacheDirPhpunit);
 
-            // create fake vendor/autoload.php
-            // @TODO once releases prior 2020-06-25 are done - comment, should be not needed
-            $repoDir = $relRepo->dir . '/vendor/' . $c->repo->alias;
-            @mkdir($repoDir . '/vendor');
-            file_put_contents($repoDir . '/vendor/autoload.php', '<?php return require __DIR__ . \'/../../../autoload.php\';');
             if ($c->repo->alias === 'atk4/ui') {
-                file_put_contents($repoDir . '/demos/db.php', '<?php $db = new \atk4\data\Persistence\SQL(\'mysql:dbname=atk4_test__ui;host=mysql\', \'atk4_test\', \'atk4_pass\');');
+                run($repoDir . '/demos/_demo-data', 'phpw . create-sqlite-db.php');
             }
 
             // run
             run(
                 $repoDir,
                 'phpw ../..'
-                . ' -d sys_temp_dir="' . realpath($cacheDirPhpunit) . '"'
-                . ' -d session.save_path="' . realpath($cacheDirPhpunit) . '"'
-                . ' -d disable_functions=' // @TODO once releases prior 2020-06-25 are done - remove disable_functions
-                . ' ../../phpunit/phpunit/phpunit --bootstrap ../../autoload.php --no-coverage -v'
-                . ' --filter "^(?!atk4\\\\data\\\\tests\\\\CSVTest::)"', // @TODO once releases prior 2020-06-25 are done - remove
+                    . ' -d sys_temp_dir="' . realpath($cacheDirPhpunit) . '"'
+                    . ' -d session.save_path="' . realpath($cacheDirPhpunit) . '"'
+                    . ' ../../phpunit/phpunit/phpunit --bootstrap ../../autoload.php --no-coverage -v'
+                    . ' --filter "^(?!atk4\\\\core\\\\tests\\\\SessionTraitTest::)"', // @TODO probably remove or move at least to ui, but for unknown reasons, not needed on notebook
                 true
             );
             $deleteDirFunc($cacheDirPhpunit);
